@@ -33,7 +33,7 @@ export const Card: React.FC<{
             <h1 className="text-pink-700 font-title font-semibold" style={{fontSize: 150}}>{text}</h1>
 
 
-            <h2 className="absolute bottom-10 text-6xl font-title">{subtitle}</h2>
+            <h2 className="absolute bottom-10 text-6xl font-title font-light uppercase">{subtitle}</h2>
 
 
             <Img src={image} className="rounded-2xl shadow-xl" style={{

@@ -1,16 +1,16 @@
 import {interpolate, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Card} from './FashionStory/Card';
-import {Title} from './FashionStory/Title';
+import {SimpleTitle} from './FashionStory/SimpleTitle';
 
 import LackA from '../imgs/lack_a.jpg';
 import LackB from '../imgs/lack_b.jpg';
 
 export const FashionStory: React.FC<{
-    titleText: string;
-    titleColor: string;
-}> = ({titleText, titleColor}) => {
+}> = () => {
     const frame = useCurrentFrame();
     const videoConfig = useVideoConfig();
+
+    const titleColor = 'text-pink-300'
 
     const opacity = interpolate(
         frame,
@@ -26,13 +26,16 @@ export const FashionStory: React.FC<{
         <div style={{flex: 1, backgroundColor: 'white'}}>
             <div style={{opacity}}>
                 <Sequence from={0} durationInFrames={30}>
-                    <Title titleText={titleText} titleColor={titleColor} />
+                    <SimpleTitle titleText={'New Arrival'} titleColor={titleColor} durationInFrames={30} />
                 </Sequence>
-                <Sequence from={30} durationInFrames={50}>
+                <Sequence from={30} durationInFrames={30}>
+                    <SimpleTitle titleText={'Shhh dont miss it'} titleColor={titleColor} durationInFrames={30} />
+                </Sequence>
+                <Sequence from={60} durationInFrames={50}>
                     <Card text="New Look!" subtitle="www.myshop.com" image={LackA} durationInFrames={50} />
                 </Sequence>
-                <Sequence from={30+50} durationInFrames={50}>
-                    <Card text="Fabolus!" subtitle="www.myshop.com" image={LackB} durationInFrames={50} />
+                <Sequence from={60+50} durationInFrames={50}>
+                    <Card text="Fabolus!" subtitle="20% discount now" image={LackB} durationInFrames={50} />
                 </Sequence>
             </div>
         </div>
