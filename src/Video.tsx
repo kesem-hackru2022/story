@@ -15,8 +15,8 @@ export const RemotionVideo: React.FC = () => {
 				component={FashionStory}
 				durationInFrames={150}
 				fps={30}
-				width={1920}
-				height={1080}
+				width={1080}
+				height={1920}
 				defaultProps={{
 					titleText: 'New Stuff! Dont miss out',
 					titleColor: 'black',
