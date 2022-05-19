@@ -13,7 +13,7 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="InstagramAd"
 				component={FashionStory}
-				durationInFrames={150}
+				durationInFrames={200}
 				fps={30}
 				width={1080}
 				height={1920}

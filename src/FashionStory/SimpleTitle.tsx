@@ -5,7 +5,6 @@ export const SimpleTitle: React.FC<{
     titleColor: string;
     durationInFrames: number;
 }> = ({titleText, titleColor, durationInFrames}) => {
-    const videoConfig = useVideoConfig();
     const frame = useCurrentFrame();
 
     const yPercent = interpolate(frame, [0, durationInFrames], [0, 100], {
