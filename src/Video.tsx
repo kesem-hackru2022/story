@@ -5,10 +5,24 @@ import {HelloWorld} from './HelloWorld';
 import {Logo} from './HelloWorld/Logo';
 import {Subtitle} from './HelloWorld/Subtitle';
 import {Title} from './HelloWorld/Title';
+import {FashionStory} from './FashionStory';
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
+			<Composition
+				id="InstagramAd"
+				component={FashionStory}
+				durationInFrames={150}
+				fps={30}
+				width={1920}
+				height={1080}
+				defaultProps={{
+					titleText: 'New Stuff! Dont miss out',
+					titleColor: 'black',
+				}}
+			/>
+
 			<Composition
 				id="HelloWorld"
 				component={HelloWorld}
