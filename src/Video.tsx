@@ -6,6 +6,9 @@ import {Logo} from './HelloWorld/Logo';
 import {Subtitle} from './HelloWorld/Subtitle';
 import {Title} from './HelloWorld/Title';
 import {FashionStory} from './FashionStory';
+import { MyMama } from './MyMama';
+import { GunsForSale } from './GunsForSale';
+
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -19,6 +22,32 @@ export const RemotionVideo: React.FC = () => {
 				height={1920}
 				defaultProps={{
 					titleText: 'New Stuff! Dont miss out',
+					titleColor: 'black',
+				}}
+			/>
+
+			<Composition
+				id="MyMama"
+				component={MyMama}
+				durationInFrames={280}
+				fps={30}
+				width={1080}
+				height={1920}
+				defaultProps={{
+					titleText: 'Black dress for sale',
+					titleColor: 'black',
+				}}
+			/>
+
+			<Composition
+				id="GunsForSale"
+				component={GunsForSale}
+				durationInFrames={280}
+				fps={30}
+				width={1080}
+				height={1920}
+				defaultProps={{
+					titleText: 'Very Good Guns',
 					titleColor: 'black',
 				}}
 			/>
