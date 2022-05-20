@@ -20,7 +20,7 @@ const frame = useCurrentFrame();
         <div className="flex items-center justify-center mx-auto">
             <div className="mx-auto">
                 <Img src={image} style={{width: '40vw', opacity: opacity}} />
-                <h1 className="font-title font-bold mx-auto text-center" style={{fontSize: 100}}>{text}</h1>
+                <h1 className="font-title font-bold mx-auto text-center text-white" style={{fontSize: 100}}>{text}</h1>
             </div>
         </div>
     )

@@ -30,7 +30,7 @@ export const Card: React.FC<{
     const scalePercent = interpolate(frame, [0, durationInFrames], [1, 1.1]);
     return (
         <div className="mx-auto p-8 relative">
-            <h1 className="text-pink-700 font-title font-semibold" style={{fontSize: 150}}>{text}</h1>
+            <h1 className="text-pink-700 font-title-bull font-semibold" style={{fontSize: 150}}>{text}</h1>
 
 
             <h2 className="absolute bottom-10 text-6xl font-title font-light uppercase">{subtitle}</h2>

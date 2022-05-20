@@ -18,7 +18,7 @@ export const SimpleTitle: React.FC<{
     return (
         <div className={`flex items-center justify-center mx-auto ${titleColor}`}>
         <h1
-            className="font-title font-bold"
+            className="font-title-bull font-bold"
             style={{
                 fontSize: 125,
                 textAlign: 'center',

@@ -6,6 +6,7 @@
     "start": "remotion preview src/index.tsx",
     "build:1": "remotion render src/index.tsx InstagramAd out/video_1.mp4",
     "build:2": "remotion render src/index.tsx MyMama out/video_2.mp4",
+    "build:3": "remotion render src/index.tsx GunsForSale out/video_3.mp4",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
