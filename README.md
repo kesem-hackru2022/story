@@ -1,4 +1,5 @@
-# Remotion video
+# Kesem HackRU 2022
+This is the team #5 project for HackRU 2022
 
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
@@ -6,19 +7,11 @@
   </a>
 </p>
 
-Welcome to your Remotion project!
 
-## Commands
-
-**Install Dependencies**
+## Setup
 
 ```console
 npm i
-```
-
-**Start Preview**
-
-```console
 npm start
 ```
 
@@ -27,24 +20,6 @@ npm start
 ```console
 npm run build
 ```
-
-**Upgrade Remotion**
-
-```console
-npm run upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help [on our Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
 
 ## License
 
