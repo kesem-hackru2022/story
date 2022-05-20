@@ -42,7 +42,7 @@ export const FashionStory: React.FC<{
                     <Card text="New Look!" subtitle="www.myshop.com" image={LackA} durationInFrames={50} />
                 </Sequence>
                 <Sequence from={60+50} durationInFrames={50}>
-                    <Card text="Fabolus!" subtitle="20% discount now" image={LackB} durationInFrames={50} />
+                    <Card text="Fabulous!" subtitle="20% discount now" image={LackB} durationInFrames={50} />
                 </Sequence>
                 <Sequence from={60+50+50} durationInFrames={30}>
                     <Logo image={StoreLogo} text={"Sofi Nails"} />

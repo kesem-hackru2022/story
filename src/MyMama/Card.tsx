@@ -4,10 +4,9 @@ import {Easing, Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 
 
 export const Card: React.FC<{
     durationInFrames: number;
-    text: string;
-    subtitle: string;
+    text?: string;
     image: string;
-}> = ({text, image, durationInFrames, subtitle}) => {
+}> = ({text, image, durationInFrames}) => {
 
     const frame = useCurrentFrame();
 
@@ -15,10 +14,9 @@ export const Card: React.FC<{
 
     return (
         <div className="mx-auto relative w-full">
-            <h1 className="absolute pr-32 top-20 -rotate-12 transform w-full text-center text-pink-700 font-title font-semibold" style={{fontSize: 150}}>{text}</h1>
+            {text && <h1 className="absolute pr-32 bottom-64 -rotate-6 transform w-full text-center font-title-serif bg-white" style={{fontSize: 140}}>{text}</h1>}
 
-
-            <Img src={image} className="rounded-2xl shadow-xl object-cover" style={{
+            <Img src={image} className="rounded-2xl shadow-xl object-cover p-32" style={{
                 width: "100%",
                 height: "100%",
                 opacity: opacityPercent,
