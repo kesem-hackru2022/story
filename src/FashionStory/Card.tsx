@@ -30,15 +30,15 @@ export const Card: React.FC<{
     const scalePercent = interpolate(frame, [0, durationInFrames], [1, 1.1]);
     return (
         <div className="mx-auto p-8 relative">
-            <h1 className="text-pink-700 font-title font-semibold" style={{fontSize: 150}}>{text}</h1>
+            <h1 className="text-white font-title font-semibold" style={{fontSize: 150}}>{text}</h1>
 
 
-            <h2 className="absolute bottom-10 text-6xl font-title font-light uppercase">{subtitle}</h2>
+            <h2 className="absolute bottom-10 text-6xl font-title font-bold uppercase">{subtitle}</h2>
 
 
-            <Img src={image} className="rounded-2xl shadow-xl" style={{
-                width: '100vh',
-                height: '100vh',
+            <Img src={image} className="mx-auto shadow-xl object-cover" style={{
+                width: '800px',
+                height: '800px',
                 transform: `translateY(${yPercent}%) skew(${skewPercent}deg, ${skewPercent}deg) scale(${scalePercent})`,
                 opacity: opacityPercent,
             }} />
